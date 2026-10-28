@@ -1,0 +1,20 @@
+.orbit3d-host { padding: 0 !important; overflow: hidden !important; height: 100%; }
+.orbit3d { height: 100%; width: 100%; display: flex; flex-direction: column; background: #11131b; color: #dce1f0; font-family: var(--font-interface, system-ui, sans-serif); }
+.orbit3d-toolbar { flex: 0 0 auto; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; padding: 16px 20px; border-bottom: 1px solid #ffffff12; background: #171a24; }
+.orbit3d-title { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #b9a4ff; white-space: nowrap; margin-right: 10px; }
+.orbit3d-toolbar input[type=search] { flex: 1; min-width: 180px; max-width: 440px; padding: 9px 12px; border: 1px solid #ffffff20; border-radius: 7px; background: #10121a; color: #eee; height: 36px; box-shadow: none; }
+.orbit3d-toolbar button { padding: 8px 12px; background: #252a3b; border: 1px solid #ffffff12; color: #dce1f0; border-radius: 6px; cursor: pointer; box-shadow: none; height: 36px; }
+.orbit3d-toolbar button:hover { background: #37324d; }
+.orbit3d-toolbar button:focus-visible, .orbit3d-toolbar input:focus-visible { outline: 2px solid #b9a4ff; outline-offset: 2px; }
+.orbit3d-toggle { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #a3aac0; cursor: pointer; white-space: nowrap; }
+.orbit3d-toggle input { accent-color: #b9a4ff; }
+.orbit3d-stage { flex: 1 1 auto; position: relative; min-height: 0; overflow: hidden; }
+.orbit3d-canvas { position: absolute; inset: 0; }
+.orbit3d-canvas canvas { display: block; }
+.orbit3d-empty { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 30px; color: #a3aac0; pointer-events: none; }
+.orbit3d-empty[hidden] { display: none; }
+.orbit3d-footer { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 20px; border-top: 1px solid #ffffff12; font-size: 11px; color: #8992ab; }
+.orbit3d-footer [data-role=stats] { color: #c4b5fd; white-space: nowrap; }
+.orbit3d-footer span:last-child { text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.orbit3d-tooltip { padding: 6px 10px; border-radius: 5px; background: #252a3b; color: #eee; border: 1px solid #ffffff25; font-size: 12px; }
+@media (max-width: 600px) { .orbit3d-toolbar { padding: 10px; gap: 7px; } .orbit3d-title { width: 100%; } .orbit3d-footer { padding: 10px; } }
